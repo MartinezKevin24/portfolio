@@ -20,3 +20,9 @@ body {
   /* color: rgb(var(--foreground-rgb)); */
   background: #FBF6EE;
 }
+
+.animate-card{
+
+}
+
+@keyframes hoverAnimation{}
