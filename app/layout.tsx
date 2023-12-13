@@ -17,8 +17,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={classNames([inter.className, "flex justify-center"])}>
-        <main className='w-full sm:w-[640px] md:w-[768px] lg:w-[1244px]'>
+      <body className={classNames([inter.className, "flex justify-center items-center h-screen"])}>
+        <main className='w-full sm:w-[640px] md:w-[890px] lg:w-[1044px]'>
           {children}
         </main>
       </body>

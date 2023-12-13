@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -16,13 +17,11 @@
   }
 }
 
+html{
+  font-family: var(--font-inter);
+}
+
 body {
   /* color: rgb(var(--foreground-rgb)); */
   background: #FBF6EE;
 }
-
-.animate-card{
-
-}
-
-@keyframes hoverAnimation{}
