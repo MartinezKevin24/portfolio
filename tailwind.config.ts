@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       animation: {
         'bounce-once': 'bounceOnce 0.5s linear',
+        'slideLeft': 'slideLeft 25s linear infinite'
       },
       keyframes:{
         bounceOnce: {
@@ -20,6 +21,14 @@ const config: Config = {
           "25%, 100%": {
             transform: 'none',
             animationTimingFunction: 'cubic-bezier(0,0,0.2,1)'
+          }
+        },
+        slideLeft: {
+          "0%": {
+            transform: "translateX(0)"
+          },
+          "100%": {
+            transform: "translateX(calc(-3380px))"
           }
         }
       }
