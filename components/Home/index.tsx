@@ -3,6 +3,7 @@ import React from 'react'
 import PresentationCard from '@/components/Home/PresentationCard'
 import CVCard from '@/components/Home/CVCard'
 import MapCard from '@/components/Home/MapCard'
+import InfiniteCarousel from '@/components/Home/InfiniteCarousel'
 import Link from 'next/link'
 
 export default function index() {
@@ -36,7 +37,8 @@ export default function index() {
           </div>
         </div>
       </div>
-      <div>
+      <div className='overflow-hidden bg-red-600 relative h-28'>
+        <InfiniteCarousel/>
       </div>
     </>
   )
