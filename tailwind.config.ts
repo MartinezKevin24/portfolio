@@ -8,11 +8,20 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      animation: {
+        'bounce-once': 'bounceOnce 0.5s linear',
+      },
       keyframes:{
-        hoverScale: {
-          '0%': {transform: 'scale(0)'},
-          '100%': {transform: 'scale(1.3)'}
-        },
+        bounceOnce: {
+          "0%, 50%": {
+            transform: 'translateY(-25%)',
+            animationTimingFunction: 'cubic-bezier(0.8,0,1,1)'
+          },
+          "25%, 100%": {
+            transform: 'none',
+            animationTimingFunction: 'cubic-bezier(0,0,0.2,1)'
+          }
+        }
       }
     },
   },
