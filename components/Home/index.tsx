@@ -4,6 +4,7 @@ import PresentationCard from '@/components/Home/PresentationCard'
 import CVCard from '@/components/Home/CVCard'
 import MapCard from '@/components/Home/MapCard'
 import InfiniteCarousel from '@/components/Home/InfiniteCarousel'
+import SpotifyList from '@/components/Misc/SpotifyList'
 import Link from 'next/link'
 
 export default function index() {
@@ -11,7 +12,7 @@ export default function index() {
     <>
       <div className='flex flex-col gap-3'>
         <div className='grid grid-cols-1 sm:grid-cols-3 sm:grid-rows-2 gap-5 sm:h-[600px]'>
-          <div className='bg-[#fd2e2ead] flex items-end sm:row-span-2 sm:col-span-1 transition ease-out hover:scale-[1.02] duration-200 delay-100 hover:shadow-xl rounded-3xl overflow-hidden'>
+          <div className='bg-[#e65f5fad] flex items-end sm:row-span-2 sm:col-span-1 transition ease-out hover:scale-[1.02] duration-200 delay-100 hover:shadow-xl rounded-3xl overflow-hidden'>
             <PresentationCard/>
           </div>
           <div className='grid sm:col-span-2 sm:row-span-2 grid-cols-2 sm:grid-rows-2 gap-5'>
@@ -37,9 +38,8 @@ export default function index() {
             </div>
           </div>
         </div>
-        <div className='overflow-hidden relative h-32'>
-          <InfiniteCarousel/>
-        </div>
+        <InfiniteCarousel/>
+        <SpotifyList/>
       </div>
     </>
   )

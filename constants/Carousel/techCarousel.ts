@@ -1,74 +1,60 @@
-import nextjs from '@/public/icons/nextjs.svg'
-import css from '@/public/icons/css.svg'
-import js from '@/public/icons/js.svg'
-import html5 from '@/public/icons/html5.svg'
-import react from '@/public/icons/react.svg'
-import git from '@/public/icons/git.svg'
-import express from '@/public/icons/express.svg'
-import mongodb from '@/public/icons/mongodb.svg'
-import tailwind from '@/public/icons/tailwind.svg'
-import redux from '@/public/icons/redux.svg'
-import typescript from '@/public/icons/typescript.svg'
-import sql from '@/public/icons/sql.svg'
-import wordpress from '@/public/icons/wordpress.svg'
-
 type Logo = {
   name: string,
-  image: HTMLImageElement
+  image: string
 }
 
 const logos: Array<Logo> = [
   {
     name: 'Next Js',
-    image: nextjs
+    image: 'icon-next-dot-js'
   },
   {
     name: 'CSS 3',
-    image: css
+    image: 'icon-css3'
   },
   {
     name: 'Javascript',
-    image: js
+    image: 'icon-javascript'
   },
   {
     name: 'Html 5',
-    image: html5
+    image: 'icon-html-five'
   },
   {
     name: 'React Js',
-    image: react
+    image: 'icon-react'
   },
   {
     name: 'Git',
-    image: git
+    image: 'icon-git'
   },
   {
     name: 'Express',
-    image: express
+    image: 'icon-express'
   },
   {
     name: 'MongoDB',
-    image: mongodb
+    image: 'icon-mongodb'
   },
   {
-    name: 'Tailwind',
-    image: tailwind
+    name: 'Tailwind CSS',
+    image: 'icon-tailwindcss'
   },
   {
     name: 'Redux',
-    image: redux
+    image: 'icon-redux'
   },
   {
     name: 'Typescript',
-    image: typescript
+    image: 'icon-typescript'
   },
   {
     name: 'SQL',
-    image: sql
+    image: 'icon-database'
   },
   {
     name: 'WordPress',
-    image: wordpress
+    image: 'icon-wordpress1'
   }
 ]
 
