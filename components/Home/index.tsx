@@ -5,6 +5,7 @@ import CVCard from '@/components/Home/CVCard'
 import MapCard from '@/components/Home/MapCard'
 import InfiniteCarousel from '@/components/Home/InfiniteCarousel'
 import SpotifyList from '@/components/Misc/SpotifyList'
+import Cameya from '@/components/Projects/Cameya'
 import Link from 'next/link'
 
 export default function index() {
@@ -39,6 +40,11 @@ export default function index() {
           </div>
         </div>
         <InfiniteCarousel/>
+        <div>
+          <div className='bg-[#BCCEFB] col-span-1 sm:col-span-1 hover:shadow-xl rounded-3xl overflow-hidden'>
+            <Cameya/>
+          </div>
+        </div>
         <SpotifyList/>
       </div>
     </>

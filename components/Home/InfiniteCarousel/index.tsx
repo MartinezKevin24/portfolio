@@ -15,7 +15,7 @@ export default function Index() {
       <div 
         className={classNames([
           'bg-black rounded-full right-2 flex justify-center items-center hover:cursor-pointer hover:bg-gray-800 h-8 w-8 absolute z-10',
-          'transition-opacity group-hover/pause:opacity-100 opacity-0 duration-200 ease-out delay-100'
+          {'transition-opacity group-hover/pause:opacity-100 opacity-0 duration-200 ease-out delay-100' : !pause}
         ])}
         onClick={pauseCarousel}>
         <span className={classNames([
