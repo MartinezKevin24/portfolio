@@ -14,7 +14,7 @@ export default function Index() {
       </div>
       <div className='flex flex-col justify-end gap-2 sm:p-6'>
         <h1 className='font-black text-center text-3xl sm:text-left'>Aló. Welcome!</h1>
-        <p className='font-normal'>I am Kevin Martinez, a front-end developer. I love upbeat music, dancing, board games, and video games.</p>
+        <p className='font-normal'>I am Kevin Martínez, a front-end developer. I love upbeat music, dancing, board games, and video games.</p>
       </div>
     </div>
   )

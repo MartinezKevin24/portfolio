@@ -10,7 +10,9 @@ const config: Config = {
     extend: {
       animation: {
         'bounce-once': 'bounceOnce 0.5s linear',
-        'slideLeft': 'slideLeft 25s linear infinite'
+        'slideLeft': 'slideLeft 25s linear infinite',
+        'rotateLeft': 'degreeLeft 1s linear',
+        'rotateRigth': 'degreeRigth 1s linear',
       },
       keyframes:{
         bounceOnce: {
@@ -29,6 +31,22 @@ const config: Config = {
           },
           "100%": {
             transform: "translateX(calc(-3380px))"
+          }
+        },
+        degreeRigth: {
+          "0%": {
+            transform: "rotate(0)"
+          },
+          "100%": {
+            transform: "rotate(10deg)"
+          }
+        },
+        degreeLeft: {
+          "0%": {
+            transform: "rotate(0)"
+          },
+          "100%": {
+            transform: "rotate(-10deg)"
           }
         }
       }

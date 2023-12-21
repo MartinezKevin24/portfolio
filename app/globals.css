@@ -26,6 +26,7 @@
 
 html{
   font-family: var(--font-inter);
+  color: rgb(46, 46, 46);
 }
 
 body {
