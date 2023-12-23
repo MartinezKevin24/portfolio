@@ -41,7 +41,7 @@ export default function index() {
         </div>
         <InfiniteCarousel/>
         <div>
-          <div className='bg-[#BCCEFB] col-span-1 sm:col-span-1 hover:shadow-xl rounded-3xl overflow-hidden transition ease-out hover:scale-[1.02] duration-200 delay-100'>
+          <div className='bg-[#BCCEFB] col-span-1 sm:col-span-1 hover:shadow-xl rounded-3xl overflow-hidden transition ease-out'>
             <Cameya/>
           </div>
         </div>
