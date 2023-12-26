@@ -1,9 +1,15 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
+import Image from 'next/image'
 
 export default function Index() {
 
-  const [data, setData] = useState({})
+  const [data, setData] = useState({
+    name: null,
+    artist: null,
+    href: null,
+    image: null
+  })
 
   useEffect(()=>{
 
@@ -21,17 +27,22 @@ export default function Index() {
         },
         cancelToken: sourceAuth.token
       }).then((response) => {
-        axios.get('https://api.spotify.com/v1/playlists/0LI2nbrKuONyG9eoPrPyKo',{
+        axios.get('https://api.spotify.com/v1/tracks/0lBOxYabLsCS8Hg5ZRaz7p',{
           headers:{
             "Authorization": `Bearer ${response.data.access_token}`
           }
-        }).then((res) => {
-          setData(res.data)
+        }).then(({data}) => {
+          setData({
+            name: data.name,
+            artist: data.artists[0].name,
+            href: data.href,
+            image: data.album.images[2]
+          })
         }).catch((err)=>{
-          console.log(err)
+          // console.log(err)
         })
       }).catch((err)=>{
-        console.log(err)
+        // console.log(err)
       })
 
     }
@@ -46,9 +57,17 @@ export default function Index() {
 
   console.log(data)
 
+  if(data?.name){
+    return (
+      <div>
+        <h1>{`"${data.name}"`}</h1>
+        <h2>{`${data.artist}`}</h2>
+        <Image src={data.image.url} alt={data.name} width={data.image.width} height={data.image.height}/>
+      </div>
+    )
+  }
+
   return (
-    <div>
-      Spotify Kevin
-    </div>
+    <></>
   )
 }
