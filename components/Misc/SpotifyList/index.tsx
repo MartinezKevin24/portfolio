@@ -22,6 +22,7 @@ type Data = {
 export default function Index() {
 
   const [play, setPlay] = useState<boolean>(false)
+  const [song, setSong] = useState<HTMLAudioElement|null>(null)
   const [data, setData] = useState<Data>({
     name: "",
     artist: "",
@@ -77,13 +78,16 @@ export default function Index() {
 
   },[])
 
+  useEffect(()=>{
+
+    if(data?.preview){
+      const song = document.getElementById("songPreview") as HTMLAudioElement | null
+      setSong(song)
+    }
+
+  }, [data?.name])
+
   if(data?.name !== ""){
-
-    const song = document.getElementById("songPreview") as HTMLAudioElement | null
-
-    song?.addEventListener('ended',()=>{
-      setPlay(false)
-    }, false)
 
     return (
       <div className='relative m-8 w-full flex flex-col gap-8 group'>
@@ -99,7 +103,7 @@ export default function Index() {
         <div className='bg-black hover:bg-gray-800 rounded-full flex justify-center items-center w-8 h-8'>
           <PlayBtn play={play} song={song} setPlay={setPlay}/>
         </div>
-        <audio src={data.preview} id='songPreview'></audio>
+        <audio src={data.preview} id='songPreview' onEnded={()=>setPlay(false)}></audio>
         <div className='absolute bottom-0 right-0'>
           <Image src={data.image.url} alt={data.name} width={130} height={130}/>
         </div>

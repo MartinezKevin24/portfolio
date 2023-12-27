@@ -28,6 +28,7 @@ const PlayBtn = ({play, setPlay, song}:
       <span className={classNames(['icon-music absolute text-green-500 z-0', {'noteRigth' : play}])}/>
       <span className={classNames(['icon-music absolute text-green-500 z-0', {'noteTop' : play}])}/>
       <span className={classNames(['icon-music absolute text-green-500 z-0', {'noteLeft' : play}])}/>
+
       <style jsx>{`
         
       .noteRigth {
