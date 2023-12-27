@@ -89,9 +89,9 @@ export default function Index() {
       <div className='relative m-8 w-full flex flex-col gap-8 group'>
         <div className='flex flex-col gap-2'>
             <span className='icon-spotify text-4xl text-[#1db954]'/>
-            <div>
+            <div className='w-fit'>
               <Link href={data.href} target='_blank'>
-                <h1 className='text-3xl font-bold hover:text-gray-600'>{`"${data.name}"`}</h1>
+                <h1 className='text-3xl font-bold hover:text-gray-600 w-fit'>{`"${data.name}"`}</h1>
               </Link>
               <h2 className='text-lg'>{`${data.artist}`}</h2>
             </div>

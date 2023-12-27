@@ -9,16 +9,16 @@ export default function Cameya() {
     <div className='relative group'>
       <Link href={'https://front-cameya.vercel.app/'} target='_blank'>
         <div className='p-3 hover:cursor-pointer right-6 top-6 hover:border-8 transition-all duration-200 ease-out bg-white rounded-full flex absolute justify-center items-center'>
-          <span className='icon-enlarge2'/>
+          <span className='icon-arrow-up-right2'/>
         </div>
       </Link>
       <div className='p-8 md:px-16 grid grid-cols-1 sm:grid-cols-3 w-full'>
         <div className='relative col-span-1 order-2 sm:order-1 h-60 flex sm:col-span-1'>
           <div className='relative w-full flex justify-center'>
-            <div className='relative left-5 z-10 top-[50px] sm:top-[30px] group-hover:-rotate-12 transition-transform duration-500'>
+            <div className='relative left-5 z-10 shadow-xl top-[50px] sm:top-[30px] group-hover:-rotate-12 transition-transform duration-500'>
               <Image src={phoneCameya} height={360} alt={"Phone screen Cameya"} quality={100}/>
             </div>
-            <div className='relative right-5 top-10 sm:top-0 group-hover:-translate-y-4 group-hover:rotate-12 transition-transform duration-500'>
+            <div className='relative right-5 shadow-xl top-10 sm:top-0 group-hover:-translate-y-4 group-hover:rotate-12 transition-transform duration-500'>
               <Image src={myServicesScreen} height={360} alt={"Phone service screen Cameya"} quality={100}/>
             </div>
           </div>
