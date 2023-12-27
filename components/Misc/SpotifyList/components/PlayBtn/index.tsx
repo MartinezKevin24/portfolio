@@ -36,7 +36,7 @@ const PlayBtn = ({play, setPlay, song}:
       }
 
       .noteTop {
-        animation: 1.5s infinite ease-out noteTop;
+        animation: 2s infinite ease-out noteTop;
         animation-delay: 0.6s;
       }
 

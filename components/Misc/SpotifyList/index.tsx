@@ -83,7 +83,7 @@ export default function Index() {
 
     song?.addEventListener('ended',()=>{
       setPlay(false)
-    })
+    }, false)
 
     return (
       <div className='relative m-8 w-full flex flex-col gap-8 group'>
