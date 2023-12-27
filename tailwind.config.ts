@@ -13,6 +13,7 @@ const config: Config = {
         'slideLeft': 'slideLeft 25s linear infinite',
         'rotateLeft': 'degreeLeft 1s linear',
         'rotateRigth': 'degreeRigth 1s linear',
+        'slowPing': 'ping 2s cubic-bezier(0, 0, 0.2, 1) infinite 0.3s;'
       },
       keyframes:{
         bounceOnce: {

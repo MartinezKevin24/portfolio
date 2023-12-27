@@ -40,12 +40,15 @@ export default function index() {
           </div>
         </div>
         <InfiniteCarousel/>
-        <div>
-          <div className='bg-[#BCCEFB] col-span-1 sm:col-span-1 hover:shadow-xl rounded-3xl overflow-hidden transition ease-out'>
+        <div className='grid grid-cols-1 sm:grid-cols-3 sm:grid-rows-2 gap-5 sm:h-[600px]'>
+          <div className='bg-[#BCCEFB] col-span-1 sm:col-span-3 hover:shadow-xl rounded-3xl overflow-hidden transition ease-out'>
             <Cameya/>
           </div>
+          <div className='bg-[#b3eec8] flex col-span-1 hover:shadow-xl rounded-3xl  transition ease-out'>
+            <SpotifyList/>
+          </div>
         </div>
-        <SpotifyList/>
+        
       </div>
     </>
   )
