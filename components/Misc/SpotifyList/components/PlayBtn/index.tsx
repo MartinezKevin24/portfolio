@@ -25,9 +25,9 @@ const PlayBtn = ({play, setPlay, song}:
           onClick={handleAudio}/>
       </div>
       <div className={classNames(['bg-[#32a059] z-10 absolute rounded-full w-10 h-10', {'animate-slowPing' : play}])}/>
-      <span className={classNames(['icon-music absolute text-green-500 z-0', {'noteRigth' : play}])}/>
-      <span className={classNames(['icon-music absolute text-green-500 z-0', {'noteTop' : play}])}/>
-      <span className={classNames(['icon-music absolute text-green-500 z-0', {'noteLeft' : play}])}/>
+      <span className={classNames(['icon-music absolute text-green-500 z-0 blur-[1px]', {'noteRigth' : play}])}/>
+      <span className={classNames(['icon-music absolute text-green-500 z-0 blur-[1px]', {'noteTop' : play}])}/>
+      <span className={classNames(['icon-music absolute text-green-500 z-0 blur-[1px]', {'noteLeft' : play}])}/>
 
       <style jsx>{`
         
@@ -50,13 +50,8 @@ const PlayBtn = ({play, setPlay, song}:
         0% {
           transform: translate(0, 0);
         }
-        55% {
-          transform: translate(24px, 24px);
-          filter: blur(1px);
-        }
         100%{
           transform: translate(28px, 28px);
-          filter: blur(3px);
         }
       }
 
@@ -64,13 +59,8 @@ const PlayBtn = ({play, setPlay, song}:
         0% {
           transform: translate(0, 0);
         }
-        55% {
-          transform: translate(-35px, 18px);
-          filter: blur(1px);
-        }
         100%{
           transform: translate(-42px, 20px);
-          filter: blur(3px);
         }
       }
 
@@ -78,13 +68,8 @@ const PlayBtn = ({play, setPlay, song}:
         0% {
           transform: translate(0, 0);
         }
-        55% {
-          transform: translate(10px, -38px);
-          filter: blur(1px);
-        }
         100%{
           transform: translate(12px, -42px);
-          filter: blur(3px);
         }
       }
 

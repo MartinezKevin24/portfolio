@@ -11,10 +11,10 @@ export default function Index() {
         <span className=''/>
       </div>
       <div className='relative flex items-center'>
-        <div className='flex z-10 sm:justify-start justify-center group-hover:z-0 group-hover:blur-3xl transition-all duration-300'>
+        <div className='flex z-10 sm:justify-start justify-center w-full group-hover:z-0 group-hover:blur-3xl transition-all duration-300'>
           <Image src={memoji} alt={"Kevin heart memoji"} width={150} height={150} style={{objectFit: 'contain'}}/>
         </div>
-        <div className='sm:justify-start absolute justify-center blur-3xl group-hover:blur-0 transition-all duration-300'>
+        <div className='sm:justify-start absolute flex justify-center w-full blur-3xl group-hover:blur-0 transition-all duration-300'>
           <Image src={partyMemoji} alt={"Kevin Party memoji"} width={150} height={150} style={{objectFit: 'contain'}}/>
         </div>
       </div>
