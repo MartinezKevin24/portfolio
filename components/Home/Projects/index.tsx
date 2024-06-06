@@ -2,6 +2,7 @@ import React from 'react'
 import SpotifyList from '@/components/Misc/SpotifyList'
 import Cameya from '@/components/Projects/Cameya'
 import VintageStock from '@/components/Projects/VintageStock'
+import Slafes from '@/components/Projects/Slafes'
 
 export default function Projects() {
   return (
@@ -12,8 +13,13 @@ export default function Projects() {
       <div className='bg-[#f8f3b2] overflow-hidden flex col-span-1 sm:col-span-2 hover:shadow-2xl rounded-3xl  transition ease-out'>
         <VintageStock/>
       </div>
-      <div className='bg-[#BCCEFB] col-span-1 sm:col-span-3 hover:shadow-2xl rounded-3xl overflow-hidden transition ease-out'>
-        <Cameya/>
+      <div className='col-span-1 sm:col-span-3 gap-5 flex flex-col'>
+        <div className='bg-[#BCCEFB] col-span-1 sm:col-span-3 min-h-[300px] hover:shadow-2xl rounded-3xl overflow-hidden transition ease-out'>
+          <Cameya/>
+        </div>
+        <div className='bg-[#FFED95] col-span-1 sm:col-span-3 min-h-[300px] hover:shadow-2xl rounded-3xl overflow-hidden transition ease-out'>
+          <Slafes/>
+        </div>
       </div>
     </div>
   )
