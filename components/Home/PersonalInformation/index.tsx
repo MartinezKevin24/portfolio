@@ -25,7 +25,7 @@ export default function PersonalInformation() {
           </Link>
         </div>
         <div className='bg-[#18349baf] col-span-1 transition ease-out hover:bg-[#18349b88] hover:shadow-2xl rounded-3xl overflow-hidden'>
-          <Link href={'https://www.linkedin.com/in/kevin-daniel-mart%C3%ADnez-acevedo-956333149/'}>
+          <Link href={'https://www.linkedin.com/in/kevin-martínez-acevedo-956333149/'}>
             <div className='flex group justify-center items-center h-full'>
               <span className='icon-linkedin2 text-[150px] md:text-[200px] group-hover:text-[#4b427a] text-white p-3'/>
             </div>
